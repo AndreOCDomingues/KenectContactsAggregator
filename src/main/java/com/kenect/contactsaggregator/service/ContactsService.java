@@ -1,11 +1,12 @@
 package com.kenect.contactsaggregator.service;
 
-import com.kenect.contactsaggregator.model.ContactResponse;
+import com.kenect.contactsaggregator.model.ContactDTO;
 
 import java.util.List;
 
 public interface ContactsService {
 
-    List<ContactResponse> getAllContacts();
+    List<ContactDTO> getAllContacts();
+    List<ContactDTO> getAllContacts(Integer pageSize);
 
 }
